@@ -1,0 +1,10 @@
+@model Bands.Models.ShowModel
+
+<h1>Add A New Show</h1>
+
+@using (@Html.BeginForm("createShow", "Band"))
+{
+    <partial name = "_formBody" model = "@Model"/>
+
+    <button type="submit" class="btn btn-success">Add Show</button>
+}

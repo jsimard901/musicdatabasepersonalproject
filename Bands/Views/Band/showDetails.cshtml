@@ -1,0 +1,12 @@
+@model Bands.Models.ShowModel
+
+<h1>Details for show from @Model.showDate </h1>
+
+<partial name = "_showDetails" model = "@Model"/>
+
+<a asp-area="" asp-controller="Band" asp-action="editForm" asp-route-showID = "@Model.id">
+
+<button class="btn btn-primary">Edit Show</button>
+
+</a>
+

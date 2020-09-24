@@ -1,0 +1,11 @@
+@model Bands.Data.ApplicationDbContext
+
+<h1>View All Shows </h1>
+
+<div class="card-columns">
+@foreach (ShowModel show in @Model.shows)
+{
+    <partial name = "_showDetails" model = "@show"/>
+
+}
+</div>

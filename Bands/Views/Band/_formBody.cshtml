@@ -1,0 +1,41 @@
+@model Bands.Models.ShowModel
+
+<div class="form-group">
+
+    @Html.LabelFor(s => s.id)
+    @Html.TextBoxFor(s => s.id, new{@class = "form-control", @readonly = "readonly"})
+  
+
+</div>
+
+<div class="form-group">
+
+    @Html.LabelFor(s => s.showDate)
+    @Html.TextBoxFor(s => s.showDate, new{@class = "form-control"})
+    @Html.ValidationMessageFor(s => s.showDate)
+
+</div>
+
+<div class="form-group">
+
+    @Html.LabelFor(s => s.showVenue)
+    @Html.TextBoxFor(s => s.showVenue, new{@class = "form-control"})
+    @Html.ValidationMessageFor(s => s.showVenue)
+
+</div>
+
+<div class="form-group">
+
+    @Html.LabelFor(s => s.showRating)
+    @Html.TextBoxFor(s => s.showRating, new{@class = "form-control"})
+    @Html.ValidationMessageFor(s => s.showRating)
+
+</div>
+
+<div class="form-group">
+
+    @Html.LabelFor(s => s.showDescription)
+    @Html.TextBoxFor(s => s.showDescription, new{@class = "form-control"})
+    @Html.ValidationMessageFor(s => s.showDescription)
+
+</div>
